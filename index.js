@@ -91,25 +91,25 @@ async function run() {
       });
     });
     // ======user collection
-    // app.post("/user", async (req, res) => {
-    //   const data = req.body;
+    app.post("/user", async (req, res) => {
+      const data = req.body;
 
-    //   console.log(data);
+      console.log(data);
 
-    //   const result = await userCollection.insertOne(data);
+      const result = await userCollection.insertOne(data);
 
-    //   res.send({
-    //     success: true,
-    //     result,
-    //   });
-    // });
+      res.send({
+        success: true,
+        result,
+      });
+    });
 
-    // app.get("/stats", async (req, res) => {
-    //   const result = await userCollection.countDocuments();
+    app.get("/stats", async (req, res) => {
+      const result = await userCollection.countDocuments();
 
-    //   console.log(result);
-    //   res.send({ user: result });
-    // });
+      console.log(result);
+      res.send({ user: result });
+    });
 
     //---------update movie---put-----
 
