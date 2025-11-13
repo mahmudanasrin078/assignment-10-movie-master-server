@@ -104,12 +104,12 @@ async function run() {
     //   });
     // });
 
-    app.get("/stats", async (req, res) => {
-      const result = await userCollection.countDocuments();
+    // app.get("/stats", async (req, res) => {
+    //   const result = await userCollection.countDocuments();
 
-      console.log(result);
-      res.send({ user: result });
-    });
+    //   console.log(result);
+    //   res.send({ user: result });
+    // });
 
     //---------update movie---put-----
 
